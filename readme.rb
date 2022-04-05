@@ -156,4 +156,17 @@
   get_min(my_array)   # => 获得最小的元素  2
   get_max(my_array)   # => 获得最大的元素  31
   对应文件：/hash/q14_my_array_not_nil_n.rb q14_my_array_max_min.rb
+ 15.使用递归方法，计算n 的阶乘
+ 对应文件：q15_q10_javascript.html
+ 16.操作数组： 把第一个元素和第二个元素调换位置，返回修改后的数组内容
+ 参数1： 数组
+参数2： 第一个元素的位置¶
+参数3： 第二个元素的位置
+要求：不创建新的数组，修改原有的数组， 获得结果。
+switch_position([1,2,3], 0, 1) # => [2,1,3]
+ 对应文件：q16_switch.html
+ 17.根据已有的数组，创建一个新的数组， 内容为已有的数组的元素 + 2
+ 根据已有的hash，创建一个新的hash， value为已有的hash的value + " new value"
+对应文件： q17_recusion_js.html
+ 
 =end
