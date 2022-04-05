@@ -1,0 +1,27 @@
+<body>
+<script>
+// 后台返回值
+var backData = [1,2,3,4,5,6,7,8,9];
+
+// 处理后的数据
+var handleData= []
+
+function handleD (backData) {
+	// 临时数据，用来填充二维数组
+	let temp= []
+	backData.forEach((item) => {
+	  	// 假如每个二维数组内存放四个数据
+      	if (temp.length === 4) {
+        	temp= []
+     	 }
+      	if (temp.length === 0) {
+        	handleData.push(temp)
+     	 }
+      	temp.push(item)
+    })
+	return temp
+}
+handleD(backData);
+console.log(handleData);
+</script>
+</body>

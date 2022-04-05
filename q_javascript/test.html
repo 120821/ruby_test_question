@@ -1,0 +1,39 @@
+
+为数组的每个元素+2
+<script>
+  let my_array = [1,2,3]
+
+  let result = []
+
+  for(let i = 0; i < my_array.length; i++ ){
+      result[i] = my_array[i] + 2
+  }
+
+  console.info(result)
+
+  function convert_array(target_array){
+    let result = []
+    for(let i = 0; i < target_array.length; i++ ){
+        result[i] = target_array[i] + 2
+    }
+    return result
+  }
+
+  console.info(convert_array([3,4,5,2,3]) )
+
+  function convert_hash(target_hash){
+    let result = {}
+    keys = Object.keys(target_hash)
+    for(let i = 0; i < keys.length; i++ ) {
+      let key = keys[i]
+      let origin_hash_value = target_hash[key]
+      console.info("=== key", key, ", origin_hash_value: ", origin_hash_value)
+      result[key] = origin_hash_value + " new value"
+    }
+    return result
+  }
+
+  let hash_result = convert_hash( { k1: 'v1', k2: 'v2'})
+  console.info("-- hash_result: ", hash_result )
+
+</script>

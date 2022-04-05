@@ -1,0 +1,91 @@
+<body>
+  <script>
+
+    var myarr=new Array(); //先声明一维
+      for(var i=0;i<2;i++){ //一维长度为2
+        myarr[i]=new Array(); //再声明二维
+          for(var j=0;j<3;j++){ //二维长度为3
+            myarr[i][j]=i+j; // 赋值，每个数组元素的值为i+j
+          }
+      }
+    console.log(myarr) // PUT [0,1,2]  [1,2,3]
+    // 先声明一维数组
+    var arr = new Array();
+    // 一维数组的长度是2
+    for(var i = 0; i<2;i++) {
+          //声明二维数组
+      arr[i] = new Array();
+          // 二维数组的长度是3
+        for(var j=0;j<3;j++) {
+              // 赋值，每个数组的值是i的值
+          arr[i][j] = new Array(i).push();
+        }
+    }
+    // 输出结果 [0,0,0] [1,1,1]
+    console.log(arr)
+    // 声明变量d数值为4
+    const d = 4
+    var arr = new Array();// 创建一维数组
+    for(var i = 0; i<d; i++) { // 元素数量为i
+       arr[i]= new Array(); // 创建二维数组
+        for(var j=0;j<(i+1);j++) { //二维数组的数量为j
+          arr[i][j] = new Array(i).push(j);
+        }
+    }
+    // 输出结果 [1] [2,2] [3,3,3] [4,4,4,4]
+    console.log(arr)
+    // 声明变量c的数值为7
+    const c = 7
+    // 声明一维数组
+    var arr = new Array();
+    //  元素的数量小于c
+    for(var i=0; i<c; i++) {
+          // 创建二维数组
+      arr[i] = new Array();
+          // 二维数组的元素数量为i
+        for(var j=0;j<(i+1);j++) {
+             // 赋值，每个数组的值是1..j
+          arr[i][j] = new Array(j).push(j);
+        }
+    }
+    console.log(arr)
+
+    var arr = new Array();
+    for(var i=1; i<3; i++) {
+      arr[i] = new Array();
+        for(var j = 0; j<i;j++) {
+          arr[i][j] = new Array(j).push(i);
+        }
+    }
+    console.log(arr)
+
+    var arr = new Array();
+
+    for(var i = 1;i<3;i++) {
+      arr[i] = new Array();
+        for(var j=0;j<i;j++) {
+          arr[i][j] = new Array(i).push()+2;
+        }
+    }
+    console.log(arr)
+    const n=3
+    var arr = new Array();
+    for(var i=1;i<n;i++) {
+      arr[i] = new Array();
+        for(var j=0;j<i;j++) {
+          console.log(arr[i])
+          arr[i][j] = "parent" + arr[i];
+        }
+      }
+    console.log(arr)
+    /* 求阶乘 */
+    function fun(n) {
+      //设置停止条件
+      if (n == 1) return 1
+      // 调用自己
+      return fun(n - 1) * n
+      n--;
+    }
+    console.log(fun(3));
+  </script>
+</body>

@@ -1,0 +1,31 @@
+<html>
+<body>
+<script>
+  const f = 9
+  var arr = new Array(f)
+  for (var i = 0; i < f; i++) {
+    arr[i] = new Array(i);
+  }
+  console.log(arr);
+  const j = 9
+  var arr = new Array()
+  for (var i = 0; i < j; i++) {
+    arr[i] = new Array(i).push(i);
+  }
+  console.log(arr);
+  var k = 8
+  var arr = new Array()
+  for (var i = 0; i < k; i++) {
+    arr[i] = new Array().push(i) + new Array(i).push(i);
+  }
+  console.log(arr);
+  const d = 9
+  var arr = new Array(d)
+  for (var i = 0; i < d; i++) {
+    arr[i] = new Array(d).push(arr[i]);
+  }
+  console.log(arr)
+
+</script>
+</body>
+</html>
